@@ -1,5 +1,10 @@
 '''
-Add prompt here!
+PROMPT  
+
+SAMPLE INPUT 
+
+SAMPLE OUTPUT
+
 '''
 
 def something():
