@@ -1,11 +1,2 @@
-'''
-PROMPT  
-
-SAMPLE INPUT 
-
-SAMPLE OUTPUT
-
-'''
-
-def something():
+def main():
     return "Hello, world"

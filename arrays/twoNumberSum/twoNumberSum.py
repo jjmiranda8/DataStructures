@@ -1,18 +1,15 @@
-'''
-PROMPT
-Write a function that takes in a non-empty array of distinct integers and an
-integer representing a target sum. If any two numbers in the input arrray sum 
-up to the target sum, the function should return them in an array, in any order.
-If no two numbers sum up to the target sum , the function should return an
-empty array. 
-
-SAMPLE INPUT
-array = [3, 5, -4, 8, 11, 1, -1, 6]
-targetSum =  10
-
-SAMPLE OUTPUT
-[-1, 11]
-'''
+import pytest 
 
 def main(array, targetSum):
-    return "Hello, world"
+    array.sort()
+    left = 0
+    right = len(array) - 1
+    while left < right:
+        currentSum = array[left] + array[right]
+        if currentSum == targetSum:
+            return [array[left], array[right]]
+        elif currentSum < targetSum:
+            left += 1
+        elif currentSum > targetSum:
+            right -= 1
+    return []
