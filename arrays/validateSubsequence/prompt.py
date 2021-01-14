@@ -21,15 +21,28 @@ and increment the seqIndex pointer. Regardless, increment the arrIndex pointer.
 If after the while condition is over the len(sequence) == seqIndex, you've found 
 the sequence exists in the first array (True)
 
-def isValidSubsequence(array, subsequence):
+def isValidSubsequence(array, sequence):
     arrIdx = 0
     seqIdx = 0
 
-    while arrIdx < len(array) and seqIdx < len(subsequence):
+    while arrIdx < len(array) and seqIdx < len(sequence):
         if array[arrIdx] == sequence[seqIdx]:
             seqIdx += 1
         arrIdx += 1
 
+    return seqIdx == len(sequence)
+
+2) Create a pointer for the seqIdx. We will loop through the main array and if 
+the seqIdx == len(sequence), break because we've found sequence. If the value is 
+equal to sequence(seqIdx), we've found one match so increment seqIdx += 1. Return
+seqIdx == len(sequence).
+
+def isValidSubsequence(array, sequence):
+    seqIdx = 0
+
+    for value in array:
+        if sequence[seqIdx] == value:
+            seqIdx += 1
     return seqIdx == len(sequence)
 
 '''

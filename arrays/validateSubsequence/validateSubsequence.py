@@ -1,14 +1,13 @@
 def main(array, sequence):
-    arrIdx = 0
     seqIdx = 0
-
-    while arrIdx < len(array) and seqIdx < len(sequence):
-        if array[arrIdx] == sequence[seqIdx]:
+    for value in array:
+        if seqIdx == len(sequence):
+            break
+        elif sequence[seqIdx] == value:
             seqIdx += 1
-        arrIdx += 1
-
     return seqIdx == len(sequence)
 '''
+1)
     arrIndex = 0
     seqIndex = 0
 
