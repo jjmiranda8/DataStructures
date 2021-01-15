@@ -1,6 +1,6 @@
 # Data Structures and Algorithms
 
-This repository will serve as a catalog for the data Structures and algorithms 
+This repository will serve as a catalog for the data structures and algorithms 
 that I practice for coding. I didn't major in Computer Science and have heard from
 multiple sources that this tends to be a weakness for people coming from a non-compsci
 background. I've automated creating a prompt, main, and test file
