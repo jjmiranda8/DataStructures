@@ -18,4 +18,12 @@ def main(array, sequence):
         arrIndex += 1
 
     return seqIndex == len(sequence) 
+2)
+    seqIdx = 0
+    for value in array:
+        if seqIdx == len(sequence):
+            break
+        elif sequence[seqIdx] == value:
+            seqIdx += 1
+    return seqIdx == len(sequence)
 '''

@@ -13,7 +13,13 @@ INPUT:  [1, 0, 0, 0, -1, -2, -10, -12]
 OUTPUT: TRUE
 
 '''
-
 def main(arr):
-    if arr is []:
-        return True
+    nonDecreasing = True
+    nonIncreasing = True
+    for i in range(1, len(arr)):
+        if arr[i] < arr[i - 1]:
+            nonDecreasing = False
+        if arr[i] < arr[i - 1]:
+            nonIncreasing = True
+    return nonDecreasing or nonIncreasing
+
